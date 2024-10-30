@@ -1,0 +1,179 @@
+/**
+ * CSS for your public-facing functionality
+ */
+.cwshidden {display:none !important;} /* conflicts with WC if just hidden
+ 
+ /* messages */
+ .successmsg, .failmsg, .warnmsg {
+	padding:15px;
+	padding-bottom:15px !important;
+	margin:15px;
+	text-align:center;
+	color:#FFF;
+	font-weight:bold;
+	font-size:110%;
+}
+.successmsg {
+	background-color:green;
+}
+.failmsg {
+	background-color:red;
+}
+.warnmsg {
+	background-color:none;
+	border:1px solid orange;
+	color:red;
+}
+/* forms */
+form.cwscs_form {
+    margin: 0 24px 24px 24px;
+}
+form.cwscs_form label {
+    display: block;
+    font-weight: 700;
+}
+form.cwscs_form label span {
+    display: block;
+    font-size: 80%;
+    color: #6f727f;
+}
+form.cwscs_form label span.dashicons {
+	font-size:14px;
+	color:black;
+	display:inline;
+	margin-right:0;
+}
+
+form.cwscs_form label.radio {
+	display:inline-block;
+	font-weight:normal;
+}
+form.cwscs_form input[type=text], form.cwscs_form input[type=file], 
+form.cwscs_form input[type=email], 
+form.cwscs_form select, form.cwscs_form textarea {
+	padding: 6px 9px;
+	width:100%;
+	font-size: 100%;
+	color: #000;
+}
+form.cwscs_form textarea {min-height:100px;}
+form.cwscs_form button {
+	margin-top:8px;
+	margin-bottom: 8px;
+	width: 100%;
+	border-radius: 4px;
+	border: 1px solid hsla(0,0%,100%,0);
+	line-height: 22px;
+	padding: 14px 30px;
+	background-color: #262D6E;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: inline-block;
+	flex: auto;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: background-color .2s linear;
+	-moz-transition: background-color .2s linear;
+	transition: background-color .2s linear;
+	opacity:1;
+}
+form.cwscs_form button:disabled {
+	background-color:#CCC;
+}
+form.cwscs_form button:hover {
+	opacity:.7;
+} 
+form.cwscs_form button.red {
+	background-color:red;
+}
+form.cwscs_form .email-msg {
+	border:1px solid black;
+	padding:6px;
+	background-color:#CCC;
+}
+form.cwscs_form .email-msg textarea {
+	min-height:200px;
+}
+
+#policy, #catprices {
+	margin:8px 0 16px 0;
+    background: #eee;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+/* buttons */
+.cws_cs input[type="submit"].green {
+	display:inline-block;
+	margin-top:3px;
+	padding:3px 3px;
+	border:1px solid green;
+	background-color:white;
+	color:green;
+	cursor:pointer;
+	font-size:100%;
+	font-weight:normal;
+	border-radius:3px;
+}
+.cws_cs input[type="submit"].orange { /* late cancel button */
+	display:inline-block;
+	margin-top:3px;
+	padding:3px 3px;
+	border:1px solid orange;
+	background-color:white;
+	color:orange;
+	cursor:pointer;
+	font-size:100%;
+	font-weight:normal;
+	border-radius:3px;
+}
+.cws_cs input[type="submit"].red {
+	border:1px solid red;
+	background-color:red;
+	color:white;
+}
+.cws_cs input[type="submit"].red:hover {
+	border:1px solid red !important;
+	background-color:white;
+	color:red !important;
+}
+.cws_cs input[type="submit"].more { /* button */
+	background-color:green;
+	border:1px solid white;
+	color:white;
+	-webkit-appearance:button;
+	box-shadow:none;
+}
+/* waiting spinner */
+.overlay_spinner {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:99999; 
+	overflow:hidden;
+	background-color:rgba(000,000,000,.7);
+	text-align:center;
+}
+.overlay_spinner h3 {
+	padding-top:15%;
+	font-size:64px;
+	color:white;
+}
+#myoverlay div {
+	position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.fa-spinner {
+	font-size:60px !important; 
+	color:#fff;
+	z-index:99999;
+}
